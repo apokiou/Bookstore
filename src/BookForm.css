@@ -1,0 +1,177 @@
+/* General Container Styling */
+.book-form-container {
+    width: 70%; 
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+  }
+  /* Header Section */
+/* Header Section */
+.header {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 30px;
+  }
+  
+  .header h1 {
+    font-size: 36px; /* Larger title size for "Bookstore" */
+    margin: 0;
+    padding: 10px 0;
+    font-weight: bold;
+    border: 2px solid #ccc; 
+    display: inline-block; 
+    background-color: #fff;
+  }
+  
+  .breadcrumbs {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #777; 
+  }
+  
+  .breadcrumbs a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .breadcrumbs a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Headings */
+  .book-form-container h2 {
+    text-align: center;
+    font-size: 24px; 
+    margin-bottom: 30px; /* Space between heading and form */
+  }
+  
+  /* Form Layout */
+  .book-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  /* Left and Right Column */
+  .left-side, .right-side {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 15px; 
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Form Inputs */
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff; 
+  }
+  
+  /* Text Area */
+  textarea {
+    height: 80px; 
+  }
+  
+  /* Image Upload Section */
+  .image-upload {
+    margin-top: 10px;
+    text-align: center; 
+  }
+  
+  input[type="file"] {
+    margin-top: 10px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Image Preview Styling */
+  .image-preview {
+    margin-top: 10px;
+    width: 100px; 
+    height: 100px; 
+    border: 1px solid #ccc;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+/* Footer Section with Buttons */
+.form-footer {
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    gap: 15px; /* Space between buttons */
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .save-btn {
+    background-color: #28a745;
+  }
+  
+  .add-btn {
+    background-color: #17a2b8;
+  }
+  
+  button:hover.save-btn {
+    background-color: #218838;
+  }
+  
+  button:hover.add-btn {
+    background-color: #138496;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .book-form {
+      grid-template-columns: 1fr; 
+    }
+  
+    .form-footer {
+      flex-direction: column;
+    }
+  
+    .save-btn, .add-btn {
+      width: 100%; 
+      margin-bottom: 10px;
+    }
+  }
+  

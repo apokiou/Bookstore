@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import AddBookPage from './pages/AddBookPage';
+import SearchPage from './pages/BookSearchPage';
+import BookDetailsPage from './pages/BookDetailsPage'; 
+import NavBar from './components/Navbar';
+
+const App: React.FC = () => {
+    return (
+        <Router>
+            <NavBar /> 
+            <div>
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/add" element={<AddBookPage />} />
+                    <Route path="/search" element={<SearchPage />} />
+                    <Route path="/book/:id" element={<BookDetailsPage />} /> 
+                </Routes>
+            </div>
+        </Router>
+    );
+};
 
 export default App;
