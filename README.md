@@ -3,18 +3,6 @@
 
 A simple React application for adding new books with validation and image upload functionality.
 
-## Table of Contents
------------------
-
-* [Features](#features)
-* [Getting Started](#getting-started)
-* [Project Structure](#project-structure)
-* [Validation Rules](#validation-rules)
-* [Image Upload](#image-upload)
-* [Future Development](#future-development)
-* [License](#license)
-
-## Features
 --------
 
 * User-friendly interface for adding new books
@@ -27,7 +15,7 @@ A simple React application for adding new books with validation and image upload
 
 To get started with the project, follow these steps:
 
-1. Clone the repository using `git clone https://github.com/your-username/react-book-form.git`
+1. Clone the repository using git clone git@github.com:apokiou/Bookstore.git
 2. Install the dependencies using `npm install` or `yarn install`
 3. Start the development server using `npm start` or `yarn start`
 4. Open your web browser and navigate to `http://localhost:3000`
@@ -59,24 +47,6 @@ The application uses the following validation rules:
 * ISBN-10: Required and must be 10 characters long
 * ISBN-13: Required and must be 13 characters long
 
-## Image Upload
--------------
 
-The application allows users to upload images with the following requirements:
 
-* Only image files are allowed
-* A preview of the uploaded image is displayed
 
-## Future Development
--------------------
-
-Future development plans include:
-
-* Adding support for editing and deleting books
-* Implementing authentication and authorization
-* Improving the user interface and user experience
-
-## License
--------
-
-This project is licensed under the MIT License. See the LICENSE file for more information.
