@@ -15,7 +15,7 @@ A simple React application for adding new books with validation and image upload
 
 To get started with the project, follow these steps:
 
-1. Clone the repository using git clone git@github.com:apokiou/Bookstore.git
+1. Clone the repository using git clone 
 2. Install the dependencies using `npm install` or `yarn install`
 3. Start the development server using `npm start` or `yarn start`
 4. Open your web browser and navigate to `http://localhost:3000`
